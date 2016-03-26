@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AXZTripViewController">
+            <connections>
+                <outlet property="resetButton" destination="9Pd-rZ-Rpz" id="UV8-mk-H3d"/>
+                <outlet property="setButton" destination="eyf-9r-AZS" id="Csf-65-P7u"/>
+                <outlet property="tripLabel1" destination="EC2-xM-7Ro" id="TSa-Iy-h96"/>
+                <outlet property="tripLabel2" destination="UOe-ye-jo8" id="hZ0-fu-BuJ"/>
+                <outlet property="tripLabel3" destination="3ry-K0-Byk" id="Dm9-61-rbM"/>
+                <outlet property="tripLabel4" destination="2Sr-Yr-hA5" id="ida-17-2sb"/>
+                <outlet property="tripLabel5" destination="MgZ-yz-0QW" id="3fK-A3-jAr"/>
+                <outlet property="tripLabel6" destination="DZg-MH-dwx" id="sTt-JZ-ZxQ"/>
+                <outlet property="typeChangeButton" destination="znf-eG-yC4" id="lYW-44-2n4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="df_bk_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="yCe-fg-QnE">
+                    <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tripmeter_if_55.png" translatesAutoresizingMaskIntoConstraints="NO" id="69f-X0-arJ">
+                    <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyf-9r-AZS">
+                    <rect key="frame" x="406" y="224" width="75" height="55"/>
+                    <state key="normal" image="button_set.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="setButtonAction:" destination="-1" eventType="touchUpInside" id="snC-5a-ZCE"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZg-MH-dwx">
+                    <rect key="frame" x="441" y="154" width="31" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgZ-yz-0QW">
+                    <rect key="frame" x="391" y="154" width="31" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sr-Yr-hA5">
+                    <rect key="frame" x="341" y="154" width="31" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ry-K0-Byk">
+                    <rect key="frame" x="321" y="171" width="31" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EC2-xM-7Ro">
+                    <rect key="frame" x="213" y="166" width="32" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6s4-YG-zvP">
+                    <rect key="frame" x="520" y="148" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WNv-ej-1UN"/>
+                        <constraint firstAttribute="width" constant="40" id="yGF-xL-8zK"/>
+                    </constraints>
+                    <state key="normal" image="arrow_right.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backToMainViewAction:" destination="-1" eventType="touchUpInside" id="B23-Kk-Jbo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znf-eG-yC4">
+                    <rect key="frame" x="333" y="226" width="70" height="53"/>
+                    <state key="normal" image="button_km.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="typeChangeAction:" destination="-1" eventType="touchUpInside" id="1aF-eP-nHJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Pd-rZ-Rpz">
+                    <rect key="frame" x="256" y="224" width="75" height="55"/>
+                    <state key="normal" image="button_reset.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="resetbutton:" destination="-1" eventType="touchUpInside" id="jXC-VZ-MAd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOe-ye-jo8">
+                    <rect key="frame" x="269" y="166" width="32" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="69f-X0-arJ" secondAttribute="trailing" id="AeT-90-r5C"/>
+                <constraint firstItem="69f-X0-arJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="CTc-TU-UnL"/>
+                <constraint firstItem="yCe-fg-QnE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DA6-kv-fk0"/>
+                <constraint firstAttribute="trailing" secondItem="6s4-YG-zvP" secondAttribute="trailing" constant="10" id="QEc-ue-5Eu"/>
+                <constraint firstItem="6s4-YG-zvP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Qat-UT-QOo"/>
+                <constraint firstAttribute="bottom" secondItem="yCe-fg-QnE" secondAttribute="bottom" id="Sr2-7G-TOz"/>
+                <constraint firstAttribute="trailing" secondItem="yCe-fg-QnE" secondAttribute="trailing" id="V6o-CK-RyG"/>
+                <constraint firstAttribute="bottom" secondItem="69f-X0-arJ" secondAttribute="bottom" id="Vac-bQ-vW5"/>
+                <constraint firstItem="69f-X0-arJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eeR-pe-Ggy"/>
+                <constraint firstItem="yCe-fg-QnE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sMd-Dd-3uj"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_right.png" width="24" height="24"/>
+        <image name="button_km.png" width="140" height="110"/>
+        <image name="button_reset.png" width="150" height="110"/>
+        <image name="button_set.png" width="150" height="110"/>
+        <image name="df_bk_bg.png" width="1136" height="640"/>
+        <image name="tripmeter_if_55.png" width="1920" height="1080"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
