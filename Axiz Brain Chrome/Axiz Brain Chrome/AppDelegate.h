@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  Axiz Brain Chrome
+//  Axiz Brain Red
 //
-//  Created by tatsuleft on 2016/03/26.
-//  Copyright (c) 2016年 tatsuleft. All rights reserved.
+//  Created by tatsuleft on 2015/07/30.
+//  Copyright (c) 2015年 tatsuleft. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
